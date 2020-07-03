@@ -1,5 +1,6 @@
 	
-
+#include <iostream>
+#include <vector>
 #include <pcl/ModelCoefficients.h>
 #include <pcl/point_types.h>
 #include <pcl/io/pcd_io.h>
@@ -11,15 +12,38 @@
 #include <pcl/sample_consensus/model_types.h>
 #include <pcl/segmentation/sac_segmentation.h>
 #include <pcl/segmentation/extract_clusters.h>
-
+#include <pcl/visualization/cloud_viewer.h>
+#include <pcl/visualization/pcl_visualizer.h>
+#include <pcl/visualization/point_cloud_color_handlers.h>
+#include <pcl/visualization/point_cloud_handlers.h>
+#include <pcl/visualization/point_cloud_geometry_handlers.h>
+#include <random>
+#include <cxxopts.hpp>
 
 int 
 main (int argc, char** argv)
 {
+
+
+
+
+    // Inputs
+    std::string path_str;
+    cxxopts::Options options("MyProgram", "One line description of MyProgram");
+    options.add_options()
+        ("help", "Print help")
+        ("input_file", "Input MBES pings", cxxopts::value(path_str));
+
+    auto result = options.parse(argc, argv);
+    if (result.count("help")) {
+        cout << options.help({ "", "Group" }) << endl;
+        exit(0);
+    }
+
   // Read in the cloud data
   pcl::PCDReader reader;
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>), cloud_f (new pcl::PointCloud<pcl::PointXYZ>);
-  reader.read ("table_scene_lms400.pcd", *cloud);
+  reader.read (path_str, *cloud);
   std::cout << "PointCloud before filtering has: " << cloud->points.size () << " data points." << std::endl; //*
 
   // Create the filtering object: downsample the dataset using a leaf size of 1cm
@@ -84,6 +108,8 @@ main (int argc, char** argv)
   ec.extract (cluster_indices);
 
   int j = 0;
+  pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer")); 
+  viewer->setBackgroundColor(0, 0, 0); 
   for (std::vector<pcl::PointIndices>::const_iterator it = cluster_indices.begin (); it != cluster_indices.end (); ++it)
   {
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_cluster (new pcl::PointCloud<pcl::PointXYZ>);
@@ -97,8 +123,23 @@ main (int argc, char** argv)
     std::stringstream ss;
     ss << "cloud_cluster_" << j << ".pcd";
     writer.write<pcl::PointXYZ> (ss.str (), *cloud_cluster, false); //*
+
+
+    double r = rand() % 256;
+    double g = rand() % 256;
+    double b = rand() % 256; 
+    pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> rgb (cloud_cluster, r, g, b);
+    viewer->addPointCloud(cloud_cluster,rgb,"gt_cloud_" + std::to_string(j));
     j++;
   }
+
+
+    while(!viewer->wasStopped ()){
+        viewer->spinOnce ();
+    }
+    viewer->resetStoppedFlag();
+        
+        
 
   return (0);
 }

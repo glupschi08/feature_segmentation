@@ -1,0 +1,1 @@
+Problem that the current cloud has no color: either extract the colored version or implement stacked_jet()
