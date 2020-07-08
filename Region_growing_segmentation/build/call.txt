@@ -1,2 +1,0 @@
-./region_growing_segmentation --input_file=../../data/keypoints__visualize_temp_2.pcd
-

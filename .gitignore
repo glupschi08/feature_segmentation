@@ -1,3 +1,3 @@
 # Don't track content of these folders
-data/
 Euclidean_Cluster_Extraction/build
+Region_growing_segmentation/build
