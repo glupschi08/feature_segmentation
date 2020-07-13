@@ -1,0 +1,1 @@
+./region_growing_rgb_segmentation --input_file=../../data/keypoints__visualize_temp_4.pcd --filter=1 -i 10
