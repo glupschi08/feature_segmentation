@@ -89,11 +89,22 @@ main (int argc, char** argv)
     std::string path_str;
     double jet_stacking_threshold=30.;
     int filter_flag=0;
+    //double test_para1=0.,test_para2=0.,test_para3=0., test_para4=0.,test_para5=0.;
+    double MinClusterSize=100;//600
+    double RegionColorThreshold=5;//5
+    double PointColorThreshold=6;//6
+    double DistanceThreshold=2;//10
     cxxopts::Options options("MyProgram", "One line description of MyProgram");
     options.add_options()
         ("help", "Print help")
             ("i,staked_height", "the height for the stacked color", cxxopts::value<double>(jet_stacking_threshold)->default_value("30.0"))
             ("f,filter", "set to 1 for filtering", cxxopts::value<int>(filter_flag)->default_value("0"))
+
+            ("a,MinClusterSize", "Param foo", cxxopts::value<double>(MinClusterSize)->default_value("100.0"))
+            ("b,RegionColorThreshold", "Param foo", cxxopts::value<double>(RegionColorThreshold)->default_value("5.0"))
+            ("c,PointColorThreshold", "Param foo", cxxopts::value<double>(PointColorThreshold)->default_value("6.0"))
+            ("d,DistanceThreshold", "Param foo", cxxopts::value<double>(DistanceThreshold)->default_value("2.0"))
+            //("e,test_para5", "Param foo", cxxopts::value<double>(test_para5)->default_value("0.0"))
 
             ("input_file", "Input MBES pings", cxxopts::value(path_str));
 
@@ -164,11 +175,12 @@ if ( pcl::io::loadPCDFile <pcl::PointXYZRGB> (path_str, *cloud) == -1 )
     //std::cout << "cloud size after filtering: " <<indices->size()<< std::endl;
     std::cout << "start RegionGrowingRGB function." << std::endl;
 
-  double MinClusterSize=100;//600
-  float RegionColorThreshold=5;//5
-  float PointColorThreshold=6;//6
-  float DistanceThreshold=2;//10
-
+    /*
+    double MinClusterSize=100;//600
+    double RegionColorThreshold=5;//5
+    double PointColorThreshold=6;//6
+    double DistanceThreshold=2;//10
+    */
   pcl::RegionGrowingRGB<pcl::PointXYZRGB> reg;
   reg.setInputCloud (cloud);
   //reg.setIndices (cloud);
