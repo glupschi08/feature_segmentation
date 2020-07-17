@@ -1,4 +1,4 @@
-The system is: Linux - 5.3.0-61-generic - x86_64
+The system is: Linux - 5.3.0-62-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/3.10.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_47eaf/fast"
-/usr/bin/make -f CMakeFiles/cmTC_47eaf.dir/build.make CMakeFiles/cmTC_47eaf.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_47eaf.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_47eaf.dir/testCCompiler.c.o   -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_47eaf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47eaf.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_47eaf.dir/testCCompiler.c.o  -o cmTC_47eaf 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_968af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_968af.dir/build.make CMakeFiles/cmTC_968af.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_968af.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_968af.dir/testCCompiler.c.o   -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_968af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_968af.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_968af.dir/testCCompiler.c.o  -o cmTC_968af 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a0303/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a0303.dir/build.make CMakeFiles/cmTC_a0303.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_a0303
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0303.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o  -o cmTC_a0303 
+Run Build Command:"/usr/bin/make" "cmTC_a3b0f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a3b0f.dir/build.make CMakeFiles/cmTC_a3b0f.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_a3b0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3b0f.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o  -o cmTC_a3b0f 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -61,24 +61,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a0303' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJUu1AC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a0303 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a0303' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3b0f' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGGMwep.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a3b0f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3b0f' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a0303/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a0303.dir/build.make CMakeFiles/cmTC_a0303.dir/build]
-  ignore line: [make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_a0303]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0303.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o  -o cmTC_a0303 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a3b0f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a3b0f.dir/build.make CMakeFiles/cmTC_a3b0f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_a3b0f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3b0f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o  -o cmTC_a3b0f ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a0303' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJUu1AC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a0303 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a3b0f' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGGMwep.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a3b0f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccJUu1AC.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccGGMwep.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -114,7 +114,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a0303] ==> ignore
+    arg [cmTC_a3b0f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -126,7 +126,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_a0303.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_a3b0f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -156,17 +156,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7b290/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7b290.dir/build.make CMakeFiles/cmTC_7b290.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7b290.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7b290.dir/feature_tests.c.o   -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7b290
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b290.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_7b290.dir/feature_tests.c.o  -o cmTC_7b290 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_0ad27/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0ad27.dir/build.make CMakeFiles/cmTC_0ad27.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ad27.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_0ad27.dir/feature_tests.c.o   -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0ad27
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ad27.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_0ad27.dir/feature_tests.c.o  -o cmTC_0ad27 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -176,17 +176,17 @@ make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBS
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b5e88/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b5e88.dir/build.make CMakeFiles/cmTC_b5e88.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b5e88.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_b5e88.dir/feature_tests.c.o   -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_b5e88
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5e88.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_b5e88.dir/feature_tests.c.o  -o cmTC_b5e88 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_81e38/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81e38.dir/build.make CMakeFiles/cmTC_81e38.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81e38.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_81e38.dir/feature_tests.c.o   -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_81e38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81e38.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_81e38.dir/feature_tests.c.o  -o cmTC_81e38 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -196,17 +196,17 @@ make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBS
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ed285/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ed285.dir/build.make CMakeFiles/cmTC_ed285.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ed285.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_ed285.dir/feature_tests.c.o   -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_ed285
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed285.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_ed285.dir/feature_tests.c.o  -o cmTC_ed285 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8c06d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c06d.dir/build.make CMakeFiles/cmTC_8c06d.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c06d.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_8c06d.dir/feature_tests.c.o   -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8c06d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c06d.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8c06d.dir/feature_tests.c.o  -o cmTC_8c06d 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -214,30 +214,30 @@ make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBS
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9aadb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9aadb.dir/build.make CMakeFiles/cmTC_9aadb.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9aadb.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_9aadb.dir/testCXXCompiler.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_9aadb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aadb.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_9aadb.dir/testCXXCompiler.cxx.o  -o cmTC_9aadb 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9150c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9150c.dir/build.make CMakeFiles/cmTC_9150c.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9150c.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_9150c.dir/testCXXCompiler.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_9150c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9150c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_9150c.dir/testCXXCompiler.cxx.o  -o cmTC_9150c 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9de82/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9de82.dir/build.make CMakeFiles/cmTC_9de82.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9de82
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9de82.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9de82 
+Run Build Command:"/usr/bin/make" "cmTC_16267/fast"
+/usr/bin/make -f CMakeFiles/cmTC_16267.dir/build.make CMakeFiles/cmTC_16267.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_16267
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16267.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_16267 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -249,24 +249,24 @@ Thread model: posix
 gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9de82' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwYKg85.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9de82 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9de82' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16267' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJYgNLP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_16267 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16267' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9de82/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9de82.dir/build.make CMakeFiles/cmTC_9de82.dir/build]
-  ignore line: [make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9de82]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9de82.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9de82 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_16267/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_16267.dir/build.make CMakeFiles/cmTC_16267.dir/build]
+  ignore line: [make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_16267]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16267.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_16267 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -278,13 +278,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9de82' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwYKg85.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9de82 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16267' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJYgNLP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_16267 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccwYKg85.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccJYgNLP.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -302,7 +302,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9de82] ==> ignore
+    arg [cmTC_16267] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -314,7 +314,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_9de82.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_16267.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -340,17 +340,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_78430/fast"
-/usr/bin/make -f CMakeFiles/cmTC_78430.dir/build.make CMakeFiles/cmTC_78430.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_78430.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_78430.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_78430
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78430.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_78430.dir/feature_tests.cxx.o  -o cmTC_78430 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_479ac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_479ac.dir/build.make CMakeFiles/cmTC_479ac.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_479ac.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_479ac.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_479ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_479ac.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_479ac.dir/feature_tests.cxx.o  -o cmTC_479ac 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -413,17 +413,17 @@ make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBS
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8b169/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8b169.dir/build.make CMakeFiles/cmTC_8b169.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8b169.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_8b169.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8b169
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b169.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_8b169.dir/feature_tests.cxx.o  -o cmTC_8b169 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a1fe6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1fe6.dir/build.make CMakeFiles/cmTC_a1fe6.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1fe6.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_a1fe6.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a1fe6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1fe6.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_a1fe6.dir/feature_tests.cxx.o  -o cmTC_a1fe6 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -486,17 +486,17 @@ make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBS
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_15015/fast"
-/usr/bin/make -f CMakeFiles/cmTC_15015.dir/build.make CMakeFiles/cmTC_15015.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_15015.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_15015.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_15015
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15015.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_15015.dir/feature_tests.cxx.o  -o cmTC_15015 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_50ebb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50ebb.dir/build.make CMakeFiles/cmTC_50ebb.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_50ebb.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_50ebb.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_50ebb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50ebb.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_50ebb.dir/feature_tests.cxx.o  -o cmTC_50ebb 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -559,17 +559,17 @@ make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBS
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1f058/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1f058.dir/build.make CMakeFiles/cmTC_1f058.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1f058.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_1f058.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1f058
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f058.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_1f058.dir/feature_tests.cxx.o  -o cmTC_1f058 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_12eed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12eed.dir/build.make CMakeFiles/cmTC_12eed.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12eed.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_12eed.dir/feature_tests.cxx.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_12eed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12eed.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_12eed.dir/feature_tests.cxx.o  -o cmTC_12eed 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -630,30 +630,30 @@ make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBS
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a9847/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a9847.dir/build.make CMakeFiles/cmTC_a9847.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a9847.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a9847.dir/CheckIncludeFile.c.o   -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a9847
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9847.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_a9847.dir/CheckIncludeFile.c.o  -o cmTC_a9847 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8e2e4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8e2e4.dir/build.make CMakeFiles/cmTC_8e2e4.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e2e4.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8e2e4.dir/CheckIncludeFile.c.o   -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8e2e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e2e4.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8e2e4.dir/CheckIncludeFile.c.o  -o cmTC_8e2e4 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp
+Change Dir: /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_35d1a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_35d1a.dir/build.make CMakeFiles/cmTC_35d1a.dir/build
-make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_35d1a.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_35d1a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_35d1a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35d1a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_35d1a.dir/CheckFunctionExists.c.o  -o cmTC_35d1a -lpthread 
-make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_4c6e4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c6e4.dir/build.make CMakeFiles/cmTC_4c6e4.dir/build
+make[1]: Entering directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c6e4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4c6e4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4c6e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c6e4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4c6e4.dir/CheckFunctionExists.c.o  -o cmTC_4c6e4 -lpthread 
+make[1]: Leaving directory '/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/CMakeTmp'
 
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized
+CMAKE_SOURCE_DIR = /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build
+CMAKE_BINARY_DIR = /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dbscan.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/dbscan.dir/flags.make
 
 CMakeFiles/dbscan.dir/main.cpp.o: CMakeFiles/dbscan.dir/flags.make
 CMakeFiles/dbscan.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dbscan.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/main.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dbscan.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/main.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/main.cpp
 
 CMakeFiles/dbscan.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbscan.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/main.cpp > CMakeFiles/dbscan.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/main.cpp > CMakeFiles/dbscan.dir/main.cpp.i
 
 CMakeFiles/dbscan.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbscan.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/main.cpp -o CMakeFiles/dbscan.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/main.cpp -o CMakeFiles/dbscan.dir/main.cpp.s
 
 CMakeFiles/dbscan.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/dbscan.dir/main.cpp.o.provides.build: CMakeFiles/dbscan.dir/main.cpp.
 
 CMakeFiles/dbscan.dir/src/dbScan.cpp.o: CMakeFiles/dbscan.dir/flags.make
 CMakeFiles/dbscan.dir/src/dbScan.cpp.o: ../src/dbScan.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dbscan.dir/src/dbScan.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/dbScan.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/dbScan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dbscan.dir/src/dbScan.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/dbScan.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/dbScan.cpp
 
 CMakeFiles/dbscan.dir/src/dbScan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbscan.dir/src/dbScan.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/dbScan.cpp > CMakeFiles/dbscan.dir/src/dbScan.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/dbScan.cpp > CMakeFiles/dbscan.dir/src/dbScan.cpp.i
 
 CMakeFiles/dbscan.dir/src/dbScan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbscan.dir/src/dbScan.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/dbScan.cpp -o CMakeFiles/dbscan.dir/src/dbScan.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/dbScan.cpp -o CMakeFiles/dbscan.dir/src/dbScan.cpp.s
 
 CMakeFiles/dbscan.dir/src/dbScan.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/dbscan.dir/src/dbScan.cpp.o.provides.build: CMakeFiles/dbscan.dir/src
 
 CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o: CMakeFiles/dbscan.dir/flags.make
 CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o: ../src/OctreeGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/OctreeGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/OctreeGenerator.cpp
 
 CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/OctreeGenerator.cpp > CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/OctreeGenerator.cpp > CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.i
 
 CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/OctreeGenerator.cpp -o CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/OctreeGenerator.cpp -o CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.s
 
 CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/dbscan.dir/src/OctreeGenerator.cpp.o.provides.build: CMakeFiles/dbsca
 
 CMakeFiles/dbscan.dir/src/cluster.cpp.o: CMakeFiles/dbscan.dir/flags.make
 CMakeFiles/dbscan.dir/src/cluster.cpp.o: ../src/cluster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dbscan.dir/src/cluster.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/cluster.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/cluster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dbscan.dir/src/cluster.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/cluster.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/cluster.cpp
 
 CMakeFiles/dbscan.dir/src/cluster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbscan.dir/src/cluster.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/cluster.cpp > CMakeFiles/dbscan.dir/src/cluster.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/cluster.cpp > CMakeFiles/dbscan.dir/src/cluster.cpp.i
 
 CMakeFiles/dbscan.dir/src/cluster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbscan.dir/src/cluster.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/cluster.cpp -o CMakeFiles/dbscan.dir/src/cluster.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/cluster.cpp -o CMakeFiles/dbscan.dir/src/cluster.cpp.s
 
 CMakeFiles/dbscan.dir/src/cluster.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/dbscan.dir/src/cluster.cpp.o.provides.build: CMakeFiles/dbscan.dir/sr
 
 CMakeFiles/dbscan.dir/src/keypointcluster.cpp.o: CMakeFiles/dbscan.dir/flags.make
 CMakeFiles/dbscan.dir/src/keypointcluster.cpp.o: ../src/keypointcluster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dbscan.dir/src/keypointcluster.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/keypointcluster.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/keypointcluster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dbscan.dir/src/keypointcluster.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbscan.dir/src/keypointcluster.cpp.o -c /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/keypointcluster.cpp
 
 CMakeFiles/dbscan.dir/src/keypointcluster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbscan.dir/src/keypointcluster.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/keypointcluster.cpp > CMakeFiles/dbscan.dir/src/keypointcluster.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/keypointcluster.cpp > CMakeFiles/dbscan.dir/src/keypointcluster.cpp.i
 
 CMakeFiles/dbscan.dir/src/keypointcluster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbscan.dir/src/keypointcluster.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/keypointcluster.cpp -o CMakeFiles/dbscan.dir/src/keypointcluster.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/keypointcluster.cpp -o CMakeFiles/dbscan.dir/src/keypointcluster.cpp.s
 
 CMakeFiles/dbscan.dir/src/keypointcluster.cpp.o.requires:
 
@@ -470,7 +470,7 @@ bin/dbscan: /usr/lib/x86_64-linux-gnu/libvtksys-6.3.so.6.3.0
 bin/dbscan: /usr/lib/x86_64-linux-gnu/libproj.so
 bin/dbscan: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.3.so.6.3.0
 bin/dbscan: CMakeFiles/dbscan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/dbscan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/dbscan"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dbscan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -491,6 +491,6 @@ CMakeFiles/dbscan.dir/clean:
 .PHONY : CMakeFiles/dbscan.dir/clean
 
 CMakeFiles/dbscan.dir/depend:
-	cd /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build /home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/build/CMakeFiles/dbscan.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build /home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/build/CMakeFiles/dbscan.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dbscan.dir/depend
 

@@ -210,13 +210,13 @@ Eigen/Dense
 pcl/common/pca.h
 -
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/HTRBasicDataStructures.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/HTRBasicDataStructures.h
 pcl/pcl_macros.h
 -
 pcl/point_types.h
 -
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/OctreeGenerator.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/OctreeGenerator.h
 pcl/octree/octree_impl.h
 -
 cstdio
@@ -244,19 +244,19 @@ string
 vector
 -
 HTRBasicDataStructures.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/HTRBasicDataStructures.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/HTRBasicDataStructures.h
 pcl/pcl_macros.h
 -
 pcl/point_types.h
 -
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/cluster.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/cluster.h
 HTRBasicDataStructures.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/HTRBasicDataStructures.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/HTRBasicDataStructures.h
 OctreeGenerator.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/OctreeGenerator.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/OctreeGenerator.h
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/dbScan.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/dbScan.h
 algorithm
 -
 chrono
@@ -308,21 +308,21 @@ pcl/common/transforms.h
 pcl/visualization/pcl_visualizer.h
 -
 HTRBasicDataStructures.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/HTRBasicDataStructures.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/HTRBasicDataStructures.h
 OctreeGenerator.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/OctreeGenerator.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/OctreeGenerator.h
 cluster.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/cluster.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/cluster.h
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/main.cpp
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/main.cpp
 iostream
 -
 include/HTRBasicDataStructures.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/HTRBasicDataStructures.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/HTRBasicDataStructures.h
 include/OctreeGenerator.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/OctreeGenerator.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/OctreeGenerator.h
 include/dbScan.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/include/dbScan.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/include/dbScan.h
 boost/algorithm/algorithm.hpp
 -
 boost/filesystem.hpp
@@ -342,9 +342,9 @@ pcl/filters/radius_outlier_removal.h
 pcl/common/centroid.h
 -
 pcl/point_types.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/pcl/point_types.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/pcl/point_types.h
 pcl/point_cloud.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/pcl/point_cloud.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/pcl/point_cloud.h
 pcl/common/common.h
 -
 cxxopts.hpp
@@ -352,31 +352,33 @@ cxxopts.hpp
 pcl/common/pca.h
 -
 keypointcluster.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/keypointcluster.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/keypointcluster.h
 queue
 -
+cxxopts.hpp
+-
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/OctreeGenerator.cpp
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/OctreeGenerator.cpp
 include/OctreeGenerator.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/include/OctreeGenerator.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/include/OctreeGenerator.h
 ctime
 -
 fstream
 -
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/cluster.cpp
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/cluster.cpp
 include/cluster.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/include/cluster.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/include/cluster.h
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/dbScan.cpp
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/dbScan.cpp
 include/dbScan.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/include/dbScan.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/include/dbScan.h
 
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/keypointcluster.cpp
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/keypointcluster.cpp
 stdlib.h
 -
 keypointcluster.h
-/home/florian/Programme/PCL/feature_segmentation/DBScan-PCL-Optimized/src/keypointcluster.h
+/home/florian/Programme/PCL/feature_segmentation/dbscan-PCL-Optimized-lib/src/keypointcluster.h
 Eigen/Core
 -
 
