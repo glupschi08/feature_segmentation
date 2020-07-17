@@ -16,11 +16,45 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/common/common.h>
 #include <pcl/common/transforms.h>
-
+#include <pcl/visualization/pcl_plotter.h>
+#include <pcl/visualization/pcl_visualizer.h>
 #include <Eigen/Eigen>
 #include <Eigen/Core>
 #include <Eigen/Dense>
 #include <pcl/common/pca.h>
+#include <random>
+
+#include <queue>
+#include "keypointcluster.h"
+#include <pcl/common/io.h>
+#include "pcl/point_types.h"
+#include "pcl/point_cloud.h"
+#include <pcl/io/pcd_io.h>
+#include <pcl/common/common.h>
+#include <pcl/common/pca.h>
+#include <math.h> /* log */
+#include <pcl/kdtree/kdtree_flann.h>
+#include "include/OctreeGenerator.h"
+
+
+#include <queue>
+#include <pcl/kdtree/kdtree_flann.h>
+
+/*
+#include <queue>
+//#include "keypointcluster.h"
+#include <pcl/common/io.h>
+#include "pcl/point_types.h"
+#include "pcl/point_cloud.h"
+#include <pcl/io/pcd_io.h>
+#include <pcl/common/common.h>
+#include <pcl/common/pca.h>
+#include <math.h>
+#include <pcl/kdtree/kdtree_flann.h>
+#include "include/OctreeGenerator.h"
+*/
+
+
 
 using namespace std;
 using namespace Eigen;
@@ -37,6 +71,7 @@ typedef std::vector<Eigen::Matrix2d, Eigen::aligned_allocator<Eigen::Matrix2d> >
 
 
 
+
 class KeypointCluster{
 private:
 
@@ -47,6 +82,8 @@ public:
     Eigen::Matrix3f Eigenvectors;
     Eigen::Vector3f Eigenvalues;
     PointCloudRGBT key_cloud;
+    //add cloud density as parameter
+
     float minX;
     float minY;
     float minZ;
@@ -61,3 +98,10 @@ public:
 
 
 #endif //DBSCAN_KEYPOINTCLUSTER_H
+void visualize_clusters(queue<KeypointCluster> Keypoint_Cluster_Queue, pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud);
+
+
+
+//queue<KeypointCluster> dbscan_classification(int octreeResolution, float eps, int minPtsAux, int minPts, pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud, int show);
+
+

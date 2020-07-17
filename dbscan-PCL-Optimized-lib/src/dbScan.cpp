@@ -365,3 +365,173 @@ void dbscan::DBSCAN_Octree_fast2(htr::OctreeGenerator *octreeGen, int minPts) {
   }
 }
 }
+
+
+
+queue<KeypointCluster> dbscan_classification(int octreeResolution, float eps, int minPtsAux, int minPts, pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud, int show){
+//void init(int filter_flag, int octreeResolution, float eps, int minPtsAux, int minPts, pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud, int show){
+
+    queue<KeypointCluster> Keypoint_Cluster_Queue;
+    std::vector<htr::Point3D> groupA;
+    dbScanSpace::dbscan dbscan;
+
+    /*************************************************************************************************/
+    // K nearest neighbor search
+    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_xyz(new pcl::PointCloud<pcl::PointXYZ>);
+    pcl::copyPointCloud(*cloud, *cloud_xyz);
+    pcl::PointXYZ searchPoint;
+    // ... populate the cloud and the search point
+    // create a kd-tree instance
+    pcl::KdTreeFLANN<pcl::PointXYZ> kdtree;
+    // assign a point cloud - this builds the tree
+    kdtree.setInputCloud(cloud_xyz);
+    // pre-allocate the neighbor index and
+    // distance vectors
+    int K = 10;
+    std::vector<int> pointsIdx(K);
+    std::vector<float> pointsSquaredDist(K);
+    // K nearest neighbor search
+    kdtree.nearestKSearch(searchPoint, K, pointsIdx, pointsSquaredDist);
+
+    std::cout << "K nearest neighbor search at (" << searchPoint.x << " " << searchPoint.y << " " << searchPoint.z
+              << ") with K=" << K << std::endl;
+
+    if (kdtree.nearestKSearch(searchPoint, K, pointsIdx, pointsSquaredDist) > 0) {
+        for (std::size_t i = 0; i < pointsIdx.size(); ++i)
+            std::cout << "    " << cloud->points[pointsIdx[i]].x << " " << cloud->points[pointsIdx[i]].y << " "
+                      << cloud->points[pointsIdx[i]].z << " (squared distance: " << pointsSquaredDist[i] << ")" << std::endl;
+    }
+
+    std::vector<double> doubleVec(pointsSquaredDist.begin(), pointsSquaredDist.end());
+    double min_val = *std::min_element(doubleVec.begin(), doubleVec.end());
+    double max_val = *std::max_element(doubleVec.begin(), doubleVec.end());
+    std::vector<double> doubleVec_normalized;
+
+    for (double x : doubleVec) {
+        double norm = ((x - min_val) / (max_val - min_val));
+        doubleVec_normalized.push_back(norm);
+    }
+
+    std::partial_sort(doubleVec_normalized.begin(), doubleVec_normalized.begin() + 2, doubleVec_normalized.end());
+    std::cout << "Sorted squared distances (normalized): \n";
+
+    for (auto x : doubleVec_normalized)
+        std::cout << x << std::endl;
+
+    std::vector<double> doubleVec_X;
+    double cont_x = 0;
+
+    for (int x = 0; x < 300; x++) {
+        doubleVec_X.push_back(cont_x);
+        cont_x += 500;
+    }
+
+    // defining a plotter
+    pcl::visualization::PCLPlotter *plotter = new pcl::visualization::PCLPlotter;
+    // adding the polynomial func1 to the plotter with [-10, 10] as the range in X axis and "y = x^2" as title
+    plotter->addPlotData(doubleVec_normalized, doubleVec_X, "k square distance", vtkChart::LINE, std::vector<char>());
+    plotter->spinOnce(300);
+
+    /************************************************************************************************/
+    std::cerr << "octreeResolution: " <<octreeResolution<< std::endl;
+    std::cerr << "eps: " <<eps<< std::endl;
+    std::cerr << "minPtsAux_: " <<minPtsAux<< std::endl;
+    std::cerr << "minPts: " <<minPts<< std::endl;
+    //----------------------------------------------------------------
+    dbscan.init(groupA, cloud, octreeResolution, eps, minPtsAux, minPts); /*RUN DBSCAN*/
+    //----------------------------------------------------------------
+
+    std::chrono::time_point<std::chrono::system_clock> start, end;
+    start = std::chrono::system_clock::now();
+    // dbscan.generateClusters();
+    dbscan.generateClusters_fast();
+
+    ofstream fout;
+    int cont = 0;
+    if (dbscan.getClusters().size() <= 0) {
+
+        pcl::console::print_error("\nCould not generated clusters, bad parameters\n");
+        std::exit(-1);
+    }
+    std::cout << "num of clusters:"<<  dbscan.getClusters().size()  <<"\n";
+
+    int cluster_cnt =1;
+    for (auto &cluster : dbscan.getClusters()) {
+        cluster_cnt++;
+        std::string str1 = "../";
+        str1 += "/cloud_cluster_";
+        str1 += std::to_string(cont);
+        str1 += ".pcd";
+
+        pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_cluster_pcd(new pcl::PointCloud<pcl::PointXYZRGB>());
+
+        // std::cout << "\nPrinting clusters..." << std::endl;
+        std::cout << "cluster " << cluster_cnt << ":" << cluster.clusterPoints.size() << std::endl;
+        std::cout << "cluster clustersCentroids" << cluster_cnt << ":" << cluster.centroid << std::endl;
+        //std::cout << "cluster clustersCentroids" << cluster_cnt << "x :" << cluster.centroid.x << std::endl;
+        pcl::PointXYZ centroit_point;
+        centroit_point.x=cluster.centroid.x;
+        centroit_point.y=cluster.centroid.y;
+        centroit_point.z=cluster.centroid.z;
+        //std::cout << "cluster clustersCentroids" << cluster_cnt << "point.x :" << point.x << std::endl;
+        for (auto &point : cluster.clusterPoints) {
+            pcl::PointXYZRGB pt;
+            pt.x = point.x;
+            pt.y = point.y;
+            pt.z = point.z;
+            pt.r = point.r;
+            pt.g = point.g;
+            pt.b = point.b;
+            cloud_cluster_pcd->points.push_back(pt);
+        }
+
+        pcl::PointXYZRGB minPt, maxPt;
+        pcl::getMinMax3D (*cloud_cluster_pcd, minPt, maxPt);
+        std::cout << "Max x: " << maxPt.x << std::endl;
+        std::cout << "Max y: " << maxPt.y << std::endl;
+        std::cout << "Max z: " << maxPt.z << std::endl;
+        std::cout << "Min x: " << minPt.x << std::endl;
+        std::cout << "Min y: " << minPt.y << std::endl;
+        std::cout << "Min z: " << minPt.z << std::endl;
+
+        //Source: http://codextechnicanum.blogspot.com/2015/04/find-minimum-oriented-bounding-box-of.html
+        // Compute principal directions
+        Eigen::Vector4f pcaCentroid;
+        pcl::compute3DCentroid(*cloud_cluster_pcd, pcaCentroid);
+        Eigen::Matrix3f covariance;
+        computeCovarianceMatrixNormalized(*cloud_cluster_pcd, pcaCentroid, covariance);
+        Eigen::SelfAdjointEigenSolver<Eigen::Matrix3f> eigen_solver(covariance, Eigen::ComputeEigenvectors);
+        Eigen::Matrix3f eigenVectorsPCA = eigen_solver.eigenvectors();
+        eigenVectorsPCA.col(2) = eigenVectorsPCA.col(0).cross(eigenVectorsPCA.col(1));  /// This line is necessary for proper orientation in some cases. The numbers come out the same without it, but
+        // Note that getting the eigenvectors can also be obtained via the PCL PCA interface with something like:
+        pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloudPCAprojection (new pcl::PointCloud<pcl::PointXYZRGB>);
+        pcl::PCA<pcl::PointXYZRGB> pca;
+        pca.setInputCloud(cloud_cluster_pcd);
+        pca.project(*cloud_cluster_pcd, *cloudPCAprojection);
+        std::cerr << std::endl << "EigenVectors: " << pca.getEigenVectors() << std::endl;
+        std::cerr << std::endl << "EigenValues: " << pca.getEigenValues() << std::endl;
+
+        //save the information in the ClusterDescriptor
+        KeypointCluster Cluster1;
+
+
+        Cluster1.set_values(cloud_cluster_pcd->size(),centroit_point,pca.getEigenVectors(),pca.getEigenValues(),minPt.x, minPt.y, minPt.z,maxPt.x, maxPt.y, maxPt.z);
+        //std::cout << "Cluster1 Eigenvalues: " << Cluster1.Eigenvalues << std::endl;
+        //Cluster1.set_values(1,cloud_cluster_pcd->size(),minPt.x, minPt.y, minPt.z,maxPt.x, maxPt.y, maxPt.z);
+        std::cout << "Cluster1 Eigenvalues: " << Cluster1.Eigenvalues << std::endl;
+        Cluster1.set_cloud(cluster_cnt, *cloud_cluster_pcd);
+        Keypoint_Cluster_Queue.push( Cluster1 );
+        pcl::io::savePCDFileBinary(str1.c_str(), *cloud_cluster_pcd);
+        cont += 1;
+    }
+    cout << "Size of queue = " << Keypoint_Cluster_Queue.size() << endl;
+
+    //-------------------------------------------------------------------//
+    end = std::chrono::system_clock::now();
+    std::chrono::duration<double> elapsed_seconds = end - start;
+    pcl::console::print_info("\n- elapsed time: ");
+    pcl::console::print_value("%d", elapsed_seconds.count());
+
+    return Keypoint_Cluster_Queue;
+}
+

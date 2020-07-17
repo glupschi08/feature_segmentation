@@ -34,6 +34,20 @@
 #include "OctreeGenerator.h"
 #include "cluster.h"
 
+
+#include <queue>
+#include "keypointcluster.h"
+#include <pcl/common/io.h>
+//#include "pcl/point_types.h"
+#include "pcl/point_cloud.h"
+#include <pcl/io/pcd_io.h>
+//#include <pcl/common/common.h>
+#include <pcl/common/pca.h>
+#include <math.h>
+#include <pcl/kdtree/kdtree_flann.h>
+#include "include/OctreeGenerator.h"
+
+
 namespace dbScanSpace {
 class dbscan {
 public:
@@ -114,3 +128,6 @@ template <typename T> void dbscan::generateClusters(std::vector<std::vector<T>> 
 }
 
 #endif
+
+
+queue<KeypointCluster> dbscan_classification(int octreeResolution, float eps, int minPtsAux, int minPts, pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud, int show);
