@@ -27,18 +27,11 @@ That is to say, they aren’t part of any cluster.
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 
-//#include "include/HTRBasicDataStructures.h"
 #include "include/OctreeGenerator.h"
 #include "include/dbScan.h"
-//#include <boost/algorithm/algorithm.hpp>
-//#include <boost/filesystem.hpp>
-//#include <boost/thread/thread.hpp>
 #include <math.h>
-//#include <pcl/kdtree/kdtree_flann.h>
-//#include <pcl/visualization/pcl_plotter.h>
 #include <pcl/filters/statistical_outlier_removal.h>
 #include <pcl/filters/radius_outlier_removal.h>
-//#include <pcl/common/centroid.h>
 
 //tryf ro filter
 #include "pcl/point_types.h"
@@ -46,8 +39,7 @@ That is to say, they aren’t part of any cluster.
 #include <pcl/common/common.h>
 #include <cxxopts.hpp>
 
-//for PCA of class
-//#include <pcl/common/pca.h>
+
 #include "keypointcluster.h"
 #include <queue>
 #include <cxxopts.hpp>

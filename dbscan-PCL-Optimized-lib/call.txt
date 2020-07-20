@@ -1,2 +1,3 @@
-./dbscan ../../../data/keypoints__visualize_temp_2.pcd 124 40 5 20 .. pcd
+./dbscan --input_file=../../../data/keypoints__visualize_temp_2.pcd --show=1 --filter=0 --octree_resolution=124 --eps=40 --minPtsAux=5 --minPts=30 
+
 
